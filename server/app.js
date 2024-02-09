@@ -13,7 +13,7 @@ const app = express()
 app.use(express.json())
 
 app.use(cors({
-    origin: "http://localhost:8081"
+    origin: "*"
   }));
 
 app.use("/api/attractions", attractionsRoutes)
